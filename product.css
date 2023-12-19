@@ -1,0 +1,150 @@
+header {
+  background-color: #028a0f;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0.5px;
+}
+.Logo {
+  width: 60px;
+  height: 50px;
+  margin: auto 10px;
+  border-radius: 50%;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  margin: auto 15px;
+  font-size: 20px;
+}
+.topic {
+  text-align: center;
+}
+.slider-container {
+  border: 1px solid black;
+  width: 90%;
+  height: 80vh;
+  background-position: center center;
+  background-size: cover;
+  margin: 30px auto;
+  border-radius: 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: relative;
+}
+
+.slide {
+  display: none;
+  width: 70%;
+  height: 250px;
+  background-position: center center;
+  background-size: cover;
+  margin: 20px 15% 0px;
+  border-radius: 20px;
+}
+
+.slide.active {
+  display: block;
+}
+
+.arrow {
+}
+
+.arrow:focus {
+}
+
+.left-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  left: 20px;
+}
+
+.right-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  right: 20px;
+}
+.discription {
+  display: none;
+  text-align: center;
+  padding: 0% 10%;
+  color: bisque;
+}
+.discription a {
+  text-decoration: none;
+  color: bisque;
+}
+.discription.active {
+  display: block;
+}
+.discription a {
+  border-radius: 40px;
+  border: 0.1px solid black;
+  padding: 2px 5px;
+}
+.discription a:hover {
+  background-color: black;
+}
+.slider-container button {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+}
+@media screen and (max-width: 800px) {
+  header h2 {
+    font-size: 20px;
+  }
+  .slider-container {
+    height: 70vh;
+  }
+  .topic {
+    font-size: 20px;
+  }
+  .discription {
+    line-height: 15px;
+    padding-bottom: 10px;
+  }
+  .discription h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header h2 {
+    font-size: 13px;
+  }
+  .discription {
+    padding: 0% 5%;
+    line-height: 12px;
+  }
+  .discription h2 {
+    font-size: 17px;
+  }
+  .discription h4 {
+    font-size: 15px;
+  }
+  .left-arrow {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+  }
+
+  .right-arrow {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+  }
+  .Logo {
+    width: 40px;
+    height: 35px;
+    margin: auto 8px;
+  }
+  .topic {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 400px) {
+  header h2 {
+    font-size: 10px;
+  }
+}
