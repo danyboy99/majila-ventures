@@ -1,0 +1,92 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #028a0f;
+}
+.Logo {
+  width: 50px;
+  height: 50px;
+  margin: auto 10px;
+  border-radius: 40px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  margin: auto 10px;
+  font-size: 30px;
+}
+.about-content {
+}
+.about-content img {
+  width: 300px;
+  height: 250px;
+  float: left;
+  border-radius: 40px;
+  margin: 10px 10px 10px 5px;
+}
+.cac-display img {
+  width: 60%;
+  height: 800px;
+  margin: 10px 20%;
+}
+@media screen and (max-width: 700px) {
+  header h2 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Logo {
+    width: 40px;
+    height: 35px;
+  }
+  header a {
+    font-size: 22px;
+  }
+  .about-content h4 {
+    font-size: 15px;
+  }
+  .about-content img {
+    width: 200px;
+    height: 150px;
+  }
+  header h2 {
+    font-size: 14px;
+  }
+  .cac-display img {
+    width: 80%;
+    height: 700px;
+    margin: 10px 10%;
+  }
+}
+@media screen and (max-width: 400px) {
+  header h2 {
+    font-size: 11px;
+  }
+  .about-content h4 {
+    font-size: 13px;
+  }
+  .about-content img {
+    width: 150px;
+    height: 100px;
+  }
+  .Logo {
+    width: 30px;
+    height: 25px;
+  }
+  .cac-display img {
+    width: 90%;
+    height: 600px;
+    margin: 10px 5%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about-content img {
+    width: 100px;
+    height: 100px;
+  }
+  .cac-display img {
+    width: 100%;
+    height: 700px;
+    margin: 10px 0px;
+  }
+}
