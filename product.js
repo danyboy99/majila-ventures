@@ -2,7 +2,8 @@ const body = document.querySelector(".slider-container");
 const slides = document.querySelectorAll(".slide");
 const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
-const discription = document.querySelectorAll(".discription");
+const viewPrescription = document.getElementById("view-prescription");
+const prescription = document.querySelector(".prescription");
 let activeSlide = 0;
 
 rightBtn.addEventListener("click", () => {
@@ -35,8 +36,10 @@ function setBgToBody() {
 
 function setActiveSlide() {
   slides.forEach((slide) => slide.classList.remove("active"));
-  discription.forEach((slide) => slide.classList.remove("active"));
 
   slides[activeSlide].classList.add("active");
-  discription[activeSlide].classList.add("active");
 }
+
+viewPrescription.addEventListener("click", () => {
+  prescription.classList.toggle("active-pre");
+});

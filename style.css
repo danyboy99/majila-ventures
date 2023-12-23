@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "rubik";
+  src: url(fonts/Rubik_Moonrocks/RubikMoonrocks-Regular.ttf);
+}
+@font-face {
+  font-family: "alpha";
+  src: url(fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf);
+}
+@font-face {
+  font-family: "cormo";
+  src: url(fonts/Cormorant_SC/CormorantSC-Medium.ttf);
+}
 body {
   margin: 0;
 }
@@ -7,6 +19,9 @@ header {
   justify-content: space-between;
   position: sticky;
   top: 0.5px;
+}
+header h4 {
+  font-family: "rubik";
 }
 .menu {
   font-size: 30px;
@@ -24,7 +39,7 @@ header {
   display: none;
   background-color: white;
   width: 15%;
-  height: 40vh;
+  height: 100vh;
   padding: 40px 10px;
   position: fixed;
   top: 1px;
@@ -48,8 +63,15 @@ header {
   right: 0.2px;
   font-size: 15px;
 }
+h4 {
+  font-family: "cormo";
+}
+h2 {
+  font-family: "cormo";
+}
 .first-sec h1 {
   text-align: center;
+  font-family: "alpha";
 }
 .first-sec h4 {
   margin: 10px 10%;
@@ -167,7 +189,6 @@ footer {
   }
   .menu-bar {
     width: 20%;
-    height: 35vh;
     padding: 20px 5px;
   }
   .menu-bar button {
@@ -273,7 +294,6 @@ footer {
   }
   .menu-bar {
     width: 30%;
-    height: 35vh;
     padding: 20px 5px;
   }
   .menu-bar button {
@@ -342,7 +362,6 @@ footer {
   }
   .menu-bar {
     width: 35%;
-    height: 40vh;
     padding: 20px 3px;
   }
   .menu-bar button {

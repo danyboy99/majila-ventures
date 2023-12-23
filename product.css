@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "rubik";
+  src: url(fonts/Rubik_Moonrocks/RubikMoonrocks-Regular.ttf);
+}
 header {
   background-color: #028a0f;
   display: flex;
   justify-content: space-between;
   position: sticky;
   top: 0.5px;
+}
+header h2 {
+  font-family: "rubik";
 }
 .Logo {
   width: 60px;
@@ -23,7 +30,7 @@ header a {
 .slider-container {
   border: 1px solid black;
   width: 90%;
-  height: fit-content;
+  height: 70vh;
   background-position: center center;
   background-size: cover;
   margin: 30px auto;
@@ -92,12 +99,47 @@ header a {
   border: none;
   font-size: 30px;
 }
+.prescription-container {
+  margin: 50px 0px;
+}
+.prescription-container button {
+  background-color: beige;
+  border: none;
+  width: 30%;
+  margin: 5px 35%;
+  padding: 5px 2px;
+}
+.view-prescription:hover {
+  background-color: black;
+  color: wheat;
+  border-radius: 40px;
+}
+.prescription {
+  display: none;
+  background-color: whitesmoke;
+  width: 80%;
+  border-radius: 50px;
+  margin: 10px 10%;
+  padding: 10px;
+}
+.active-pre {
+  display: block;
+}
+.heading1 {
+  text-align: center;
+}
+.pre {
+  font-size: 20px;
+}
+.heading2 {
+  text-align: center;
+}
 @media screen and (max-width: 800px) {
   header h2 {
     font-size: 20px;
   }
   .slider-container {
-    height: fit-content;
+    height: 70vh;
   }
   .topic {
     font-size: 20px;
@@ -109,6 +151,44 @@ header a {
   }
   .discription h2 {
     font-size: 20px;
+  }
+  .heading1 {
+    font-size: 17px;
+  }
+  .pre {
+    font-size: 15px;
+  }
+  .heading2 {
+    font-size: 17px;
+  }
+  .HTU {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .prescription {
+    width: 90%;
+    margin: 10px 5%;
+  }
+  .heading1 {
+    font-size: 13px;
+  }
+  .pre {
+    font-size: 13px;
+  }
+  .heading2 {
+    font-size: 13px;
+  }
+  .HTU {
+    font-size: 12px;
+  }
+  .prescription-container button {
+    width: 40%;
+    margin: 5px 30%;
+    padding: 5px 0px;
+  }
+  .view-prescription {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -144,9 +224,27 @@ header a {
   .topic {
     font-size: 16px;
   }
+  .view-prescription {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 400px) {
   header h2 {
     font-size: 10px;
+  }
+  .heading1 {
+    font-size: 11px;
+  }
+  .pre {
+    font-size: 11px;
+  }
+  .heading2 {
+    font-size: 11px;
+  }
+  .HTU {
+    font-size: 10px;
+  }
+  .prescription h5 {
+    font-size: 12px;
   }
 }

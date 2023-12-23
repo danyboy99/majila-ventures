@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "cormo";
+  src: url(fonts/Cormorant_SC/CormorantSC-Medium.ttf);
+}
+@font-face {
+  font-family: "rubik";
+  src: url(fonts/Rubik_Moonrocks/RubikMoonrocks-Regular.ttf);
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -15,7 +23,11 @@ header a {
   margin: auto 10px;
   font-size: 30px;
 }
-.about-content {
+header h2 {
+  font-family: "rubik";
+}
+.about-content h4 {
+  font-family: "cormo";
 }
 .about-content img {
   width: 300px;
